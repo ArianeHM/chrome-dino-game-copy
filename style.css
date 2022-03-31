@@ -1,0 +1,114 @@
+#body{
+	 background-image:url("imagens/sky.png");
+     background-color: ##000060;
+     background-size: 100% 100%;
+	 border: 1px solid black;
+	 height:300px;
+	 width:800px;
+	 
+}
+
+#player{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 200px;
+	 
+}
+
+
+.jump{
+	 animation-name: jump;
+	 animation-duration: 0.4s;
+}
+
+
+#obstacle{
+	    width: 50px;
+		height: 50px;
+		position: relative;
+		top: 188px;
+		left: 710px;
+		animation: slide 0.9s linear infinite;
+}
+
+
+#cloud{
+		 width:30px;
+		 height:30px;
+		 top:-80px;
+		left:710px;
+		 position:relative;
+		 animation: slide 6s infinite linear;
+}
+
+#ground{
+		 width:30px;
+		 height:30px;
+		 top:185px;
+		 position:relative;
+		 
+}
+
+
+@keyframes jump {
+	0%   {top: 200px;}
+	25%  {top: 10px;}
+	50%  {top: 10px;}
+	75%  {top: 20px;}
+	100% {top: 200px;}
+}
+
+
+
+@keyframes slide {
+	0% {
+		left: 710px;
+  }
+
+	100% {
+		left: -10px;
+  }
+}
+
+
+
+#gameOver {
+    display: none;
+    font-size: 70px;
+    position: absolute;
+    left: 210px;
+    top: 60px;
+    width: 362px;
+    height: 80px;
+    color: white;
+	font-family:Arial;
+}
+
+
+
+
+#score {
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: -150px;
+    right: -690px;
+	font-family:Arial;
+	color: white;
+}
+
+
+
+.button {
+	background-color: #0bd;
+	border: 0;
+	padding: 10px;
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	margin: 20px;
+	margin-left: 100px;
+	cursor: pointer;
+	border-radius: 5px;
+}
