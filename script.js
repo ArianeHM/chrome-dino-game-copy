@@ -44,6 +44,7 @@ var death = setInterval(function(){
 	if(leftObstacle < 30 && leftObstacle > 0 && topPlayer >= 130){
 		obstacle.style.animation = "none"
 		obstacle.style.display = "none"
+		player.style.display = "none"
 		ground.style.display = "none"
 		cloud.style.display = "none"
 		gameOver.style.display = "block"
